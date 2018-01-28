@@ -1,0 +1,15 @@
+@import 'colour';
+@import 'layout';
+@import 'type';
+
+/**
+ * Constant header
+ */
+
+.logo, .logo b { font-weight: 400; }
+.logo {
+  color: $brand;
+  &:hover {
+    color: transparent;
+    b { color: lighten( $brand, 10% ); } }
+}
