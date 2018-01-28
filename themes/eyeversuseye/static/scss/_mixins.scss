@@ -1,0 +1,15 @@
+/**
+ * Thin
+ */
+@mixin break( $size ) {
+ @if $size == x {
+    @media ( min-width: 80em ) {
+      @content;
+    }
+  }
+  @else if $size == s {
+    @media ( min-width: 50em ) {
+      @content;
+    }
+  }
+}

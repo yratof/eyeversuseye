@@ -1,20 +1,108 @@
+header,
 .half {
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 96%;
+  @include break(s) {
+    max-width: 90%;
+  }
+}
 
+header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3vw;
+  grid-gap: 1vw;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  text-align: center;
+  @include break(s) {
+    grid-template-columns: 1fr 1fr;
 
-  img {
+    .logo { text-align: left; }
+    nav { text-align: right; }
+  }
+
+}
+
+nav {
+  margin: 0;
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-left: 2rem;
+      &:first-child { margin-left: 0; }
+      a {
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/**
+ * The space between
+ */
+.middle,
+.half {
+  padding: 1rem 0;
+
+  @include break(s) {
+    padding: 4rem 0;
+  }
+  @include break(x) {
+    padding: 10rem 0;
+  }
+}
+
+.middle {
+  max-width: calc( 50rem - 5vmax );
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.half {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  @include break(s) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include break(x) {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: calc( 1rem + 1vmax );
+  }
+
+  &.reverse {
+    @include break(s) {
+      grid-template-columns: 1fr 2fr;
+    }
+    @include break(s) {
+      grid-template-columns: 1fr 2fr;
+      grid-gap: calc( 2rem + 2vmax );
+    }
+  }
+
+  img, video {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
+  figure {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
   aside {
-    background-color: white;
-    padding: 2rem;
+    padding: 1rem;
+    @include break(s) {
+      padding: 2rem;
+    }
   }
 }
+

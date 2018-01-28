@@ -1,13 +1,22 @@
 {{ partial "header.html" . }}
 
-    <div class="half">
-      <img src="https://picsum.photos/750/750" alt="Ourselves"/>
-      <aside>
-        <h1>Story teller. Playing with <a href="https://github.com/yratof?tab=repositories" target="_blank" class="blue">code</a> &amp; <a href="http://yratof.co.uk" target="_blank" class="red">ink</a></h1>
-        <h3>Often found being experimental</h3>
-        <p>There's an element of sleep in his eye, but i can't imagine he's not noticed it yet.</p>
-        <p> Why wouldn't he notice it... <em>Does he even care?</em></p>
-      </aside>
-    </div>
+  <div class="half">
+    <figure>
+      <video src="{{ .Site.BaseURL }}/video/stretch.mp4" playsinline="playsinline" autoplay="autoplay" loop="loop"></video>
+    </figure>
+    <aside class="grand">
+      <h1>Experimental story teller</h1>
+      <p>Creating something that is powerful and impactful can be difficult to achieve without years of knowledge of how <em>not to</em> accomplish those narratives.</p>
+    </aside>
+
+  </div>
+
+
+  <hr />
+
+  <div class="half reverse">
+    <div></div>
+    <h2>A carfully curated list of companies I've had the pleasure of working with</h2>
+  </div>
 
 {{ partial "footer.html" . }}
