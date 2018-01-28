@@ -1,0 +1,43 @@
+body {
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $brand;
+  margin: 0;
+}
+
+
+.logo,
+.logo b,
+nav a {
+  font-size: calc( 1rem + 0.5vmax );
+  font-weight: 200;
+}
+
+h1 { font-size: calc( 2rem + 2vmin ); }
+h2 { font-size: calc( 2.75rem + 2vmin ); }
+h3 { font-size: calc( 2rem + 1vmin ); }
+h4 { font-size: calc( 1rem + 1.5vmin ); }
+h5, h6, p { font-size: calc( 0.8rem + 2vmin ); }
+
+/**
+ * First letter of the paragraph
+ */
+
+.grand p:first-of-type:first-letter {
+  // Style
+  font-weight: 700;
+  color: $highlight;
+  // Make sure the letter is exact.
+  float: left;
+  font-size: calc( 2rem + 5vmin );
+  line-height: 60%;
+
+  // Spacing around the letter
+  padding-left: 0;
+  padding-right: calc( 0.5rem + 0.5vmin );
+  padding-top: calc( 0.5rem + 0.5vmin );
+  padding-bottom: 0;
+}

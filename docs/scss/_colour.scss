@@ -1,0 +1,14 @@
+$brand: #21006e;
+$highlight: #ff5322;
+
+body {
+  background-color: #f3f3f3;
+}
+
+h1, h2, h3 {
+  color: $brand;
+}
+
+h4, h5, h6, a {
+  color: $highlight;
+}

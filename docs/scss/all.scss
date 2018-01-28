@@ -1,0 +1,15 @@
+@import 'colour';
+@import 'mixins';
+@import 'layout';
+@import 'type';
+
+/**
+ * Constant header
+ */
+
+.logo {
+  color: $brand;
+  &:hover {
+    color: lighten( $brand, 70% );
+    b { color: darken( $brand, 10% ); } }
+}
