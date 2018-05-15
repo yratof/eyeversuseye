@@ -1,4 +1,4 @@
-baseURL      = "https://yratof.github.io/eyeversuseye/docs/"
+baseURL      = "https://yratof.github.io/eyeversuseye/"
 languageCode = "en-gb"
 title        = "Eyeversuseye"
 theme        = "eyeversuseye"
