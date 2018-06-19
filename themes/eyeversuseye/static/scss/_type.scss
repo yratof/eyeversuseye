@@ -1,5 +1,26 @@
+@font-face {
+  font-family: 'coding';
+  font-style: normal;
+  font-weight: 300;
+  src: url(gt-pressura-mono-light-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url(gt-pressura-mono-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'coding';
+  font-style: normal;
+  font-weight: 600;
+  src: url(gt-pressura-mono-bold-webfont.woff2) format('woff2');
+}
+
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'coding', sans-serif;
   line-height: 1.4;
 }
 

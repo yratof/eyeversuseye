@@ -96,19 +96,15 @@ nav {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: fixed;
+    top: 20%;
+    left: 50%;
     height: 100%;
     z-index: -1;
+    width: 1280px;
+    transform: translate(-50%);
   }
 
-  aside {
-    padding: 1rem;
-    @include break(s) {
-      padding: 2rem;
-    }
-  }
+  aside {}
 }
 
